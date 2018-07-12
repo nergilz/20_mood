@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,6 +13,12 @@
       {
         "phrase": "Кукурузные хлопья - теперь без асбеста!",
         "signature": "©Неизвестный маркетолог"
+      },
+      {
+        "phrase": "Вывеска над кафе — '&#60Мы открылись&#62'. Что-то не так. Где же '&#60/Мы открылись&#62'?"
+      },
+      {
+        "phrase": "Новости про птичий грип. Страусы чихают под землю! Кроты в панике!"
       },
       {
         "phrase": "Собираюсь жить вечно, пока всё идёт нормально"
@@ -36,9 +41,7 @@
     ]
   </script>
 </head>
-
 <body class="text-center">
-
   <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
     <header class="masthead mb-auto">
       <div class="inner">
@@ -50,7 +53,6 @@
         </nav>
       </div>
     </header>
-
     <main role="main" class="inner cover">
       <h2 class="cover-heading">Joke of the day</h2>
       <p class="lead">
@@ -60,14 +62,12 @@
         <span id="output"></span>
       </div>
     </main>
-    
     <footer class="mastfoot mt-auto">
         <div class="inner">
           <p>Mood template for <a href="https://devman.org/">Devman</a>.</p>
         </div>
     </footer>
   </div>
-
   <script type="text/javascript">
     function move(){ 
       var phrases = JSON.parse(document.getElementById('quotes_json').innerHTML);
@@ -76,6 +76,5 @@
       document.getElementById('output').innerHTML = joke;
       };
   </script>
-
 </body>
 </html>
